@@ -1,3 +1,125 @@
+/* Ellie's code */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  /* cover : Scales the image as large as possible to 
+  fill the container, stretching the image if necessary. */
+  background: url(img/background.png) center/cover;
+  border-radius: 20px;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.game__button {
+  width: 60px;
+  height: 60px;
+  background-color: wheat;
+  border: 4px solid black;
+  font-size: 24px;
+  transition: transform 300ms ease-in;
+}
+
+.game__button:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  border: 4px solid black;
+  font-size: 32px;
+  margin-top: 8px;
+  border-radius: 20px;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.game__field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.game__score {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  font-size: 32px;
+  background-color: darksalmon;
+  border: 3px solid black;
+  border-radius: 50%;
+  color: white;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.pop-up {
+  display: block;
+  width: 400px;
+  height: 140px;
+  margin: auto;
+  padding: 20px;
+  /* #??????XX  <- XX는 투명도를 표현, 배경색만 투명하게 된다 */
+  background-color: #00000090;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transform: translateY(-150%);
+}
+
+.pop-up--hide {
+  display: none;
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pop-up__message {
+  display: block;
+  font-size: 38px;
+}
+
+.carrot,
+.bug {
+  transition: trnasform 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
+
+/* My Code
 * {
   box-sizing: border-box;
 }
@@ -110,4 +232,4 @@ button:hover {
 
 .replayText {
   font-size: 28px;
-}
+} */

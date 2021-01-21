@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrot Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3895695ec3.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/3895695ec3.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/carrot.png">
 </head>
 <body>
+    <!-- Ellie's Code -->
+    <section class="game">
+        <header class="game__header">
+            <button class="game__button">
+                <i class="fas fa-play"></i>
+            </button>
+            <span class="game__timer">0:0</span>
+            <span class="game__score">10</span>
+        </header>
+        <section class="game__field"></section>
+    </section>
+    <section class="pop-up pop-up--hide">
+        <button class="pop-up__refresh">
+            <i class="fas fa-redo-alt"></i>
+        </button>
+        <span class="pop-up__message">Hello</span>
+    </section>
+
+
+
+    <!-- My Code
     <section class="carrotGame">
         <img class = "background"src="img/background.png" alt="">
         <button class="startBtn"><i class="fas fa-play"></i></button>
         <button class="stopBtn"><i class="fas fa-stop"></i></button>
-        <div class="timer"></div>
-        <div class="counter"></div>
+        <div class="timer">0</div>
+        <div class="counter">0</div>
         <div class="field"></div>
     </section>
     <div class="replay">
@@ -23,6 +44,6 @@
             <i class="fas fa-redo-alt"></i>
         </button>
         <span class="replayText"></span>
-    </div>
+    </div> -->
 </body>
 </html>
